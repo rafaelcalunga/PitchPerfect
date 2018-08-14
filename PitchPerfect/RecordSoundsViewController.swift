@@ -11,7 +11,7 @@ import AVFoundation
 
 class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
-    //MARK - Properties
+    // MARK: - Properties
     
     var audioRecorder: AVAudioRecorder!
     
@@ -19,6 +19,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var stopRecordingButton: UIButton!
     
     @IBOutlet weak var recordingLabel: UILabel!
+    
+    // MARK: - Initialization
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +33,9 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - Actions
 
     @IBAction func startRecording(_ sender: UIButton) {
         recordingLabel.text = "Recording in Progress"
@@ -71,6 +74,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             print("Erro")
         }
     }
+    
+    // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
