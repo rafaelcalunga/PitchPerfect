@@ -1,6 +1,7 @@
 # PitchPerfect
 
 Using this app, you can record an audio and add some distortions to it.
+
 I made this project to improve my knowledge in iOS development.
 
 ![PitchPerfect](https://github.com/rafaelcalunga/PitchPerfect/blob/master/pitchperfect.gif)
